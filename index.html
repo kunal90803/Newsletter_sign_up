@@ -6,6 +6,9 @@
 
   <!-- <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> -->
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="responsive.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
@@ -18,11 +21,29 @@
 <body>
   <main>
     <section>
-      <article>
-        <h1>Stay updated!</h1>
+      <article class="first">
+        <div class="content">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+          <div class="notes">
+            <div><img src="./assets/images/icon-list.svg">Product discovery and building what matters</div>
+            <div><img src="./assets/images/icon-list.svg">Measuring to ensure updates are a success</div>
+            <div><img src="./assets/images/icon-list.svg">And much more!</div>
+          </div>  
+
+          <span class="email-add">Email address</span>
+          <input type="text" placeholder="email@company.com">
+          <button class="subscribe"> Subscribe to monthly newsletter</button>
+
+          
+        </div>
       </article>
-      <article>
-        <img class="icon" src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+      <article class="second">
+        <picture>
+          <source srcset="./assets/images/illustration-sign-up-mobile.svg" media="(max-width: 1024px)">
+          <img class="icon" src="./assets/images/illustration-sign-up-desktop.svg" alt="Sign Up Illustration">
+        </picture>
       </article>
 
     </section>

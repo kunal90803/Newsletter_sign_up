@@ -1,0 +1,27 @@
+@media (max-width:1024px){
+    section{
+        width: 400px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        padding: 0;
+        border-radius: 0;
+
+    }
+    .second img {
+        width: 400px; /* Ensure the image takes full width */
+        height: auto; /* Maintain aspect ratio */
+        
+    }
+    .second{
+        margin: 0;
+    }
+    h1{
+        font-size:40px ;
+        margin: 0;
+    }
+    .content{
+        padding: 0 0 30px 0px;
+    }
+}
