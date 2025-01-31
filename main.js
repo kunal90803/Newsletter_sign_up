@@ -21,6 +21,7 @@ button.addEventListener("click",function(){
     }
     else{
         error.classList.remove("hide")
+        document.querySelector("input").style.background="hsl(4,100%,67%,30%)"
 
     }
 
