@@ -20,7 +20,7 @@
 </head>
 <body>
   <main>
-    <section>
+    <section class="">
       <article class="first">
         <div class="content">
           <h1>Stay updated!</h1>
@@ -31,10 +31,16 @@
             <div><img src="./assets/images/icon-list.svg">Measuring to ensure updates are a success</div>
             <div><img src="./assets/images/icon-list.svg">And much more!</div>
           </div>  
+          <div class="wrapper">
+            <span class="email-add">Email address</span>
+            <span class="error hide">Valid Email Required</span>
+          </div>
+          
 
-          <span class="email-add">Email address</span>
-          <input type="text" placeholder="email@company.com">
-          <button class="subscribe"> Subscribe to monthly newsletter</button>
+          
+          <input type="email" id="mail" placeholder="email@company.com" required>
+          <button type="submit" class="subscribe"> Subscribe to monthly newsletter</button>
+          
 
           
         </div>
@@ -47,6 +53,19 @@
       </article>
 
     </section>
+
+    <div class="container hide">
+      <div class="success">
+        <div>
+        <img src="./assets/images/icon-list.svg" alt="tick">
+        
+        <p>Thanks for subscribing!</p>
+        <span class="confirm">A confirmation email has been sent to <span class="mailid">ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription.</span>
+      </div>
+        <button id="dismiss" class="dismiss" type="submit"> Dismiss Message</button>
+
+      </div>
+    </div>
   </main>
 
   
